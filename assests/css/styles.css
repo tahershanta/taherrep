@@ -1,3 +1,67 @@
 html {
-  background-color: red;
+  background-color: lightblue;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+  font-family: 'Droid Serif', serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.nav-wrapper {
+  background-color: wheat;
+}
+
+.navbar {
+  margin: 0 auto;
+  max-width: 400px;
+  display: flex;
+}
+
+.nav-item {
+  display: inline-block;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-item a {
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border-bottom: 2px solid white;
+  background-color: purple;
+  position: relative;
+}
+
+.nav-item a:after {
+  content: "";
+  display: none;
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  background-color: #fff;
+  left: calc(50% - 20px);
+  bottom: 1;
+
+}
+
+.nav-item a:hover:after {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
 }
