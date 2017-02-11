@@ -22,6 +22,7 @@ a {
 }
 .nav-wrapper {
   background-color: wheat;
+  height: 65px;
 }
 
 .navbar {
@@ -34,6 +35,7 @@ a {
   display: inline-block;
   flex-grow: 1;
   text-align: center;
+  position: relative;
 }
 
 .nav-item a {
@@ -46,7 +48,7 @@ a {
   position: relative;
 }
 
-.nav-item a:after {
+.nav-item > a:after {
   content: "";
   display: none;
   position: absolute;
@@ -62,6 +64,32 @@ a {
   display: block;
 }
 
+
 .dropdown-menu {
-  display: none;
+  display: block;
+  background-color: wheat;
+  position: absolute;
+  right0;
+  width: 200px;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  padding: 5px 0;
+  transform: scale(0);
+  transition: transform ease-in-out 500ms;
+}
+
+.dropdown-menu.open {
+  transform: scale(1);
+}
+
+.dropdown-item a {
+  color: white;
+  display: block;
+
+}
+
+.dropdown-item a:hover {
+  color: yellow;
+
 }
